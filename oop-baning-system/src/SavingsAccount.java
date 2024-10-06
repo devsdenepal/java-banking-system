@@ -6,7 +6,7 @@ public class SavingsAccount extends BankAccount {
     public SavingsAccount(String firstName, String lastName, String accountNumber, double initialBalance, double annualInterestRate) {
         super(firstName, lastName, accountNumber, initialBalance);
         this.annualInterestRate = annualInterestRate;
-        this.status = true; // Account is active initially
+        this.status = true; 
         this.numberOfWithdrawals = 0;
     }
 
@@ -21,8 +21,8 @@ public class SavingsAccount extends BankAccount {
             numberOfWithdrawals++;
             transactionHistory.add("Withdrew: $" + amount);
             System.out.println("Withdrew: $" + amount);
-            checkStatus(); // Check status after withdrawal
-        } else {
+            checkStatus(); 
+        } else {t
             System.out.println("Withdrawal failed: Insufficient balance or invalid amount.");
         }
     }
@@ -37,8 +37,7 @@ public class SavingsAccount extends BankAccount {
 
     @Override
     public void monthlyProcess() {
-        super.monthlyProcess(); // Call the superclass method
-        // Service charge for savings account
+        super.monthlyProcess(); 
         if (numberOfWithdrawals > 4) {
             int excessWithdrawals = numberOfWithdrawals - 4;
             double serviceCharge = 5 + (excessWithdrawals * 1);
@@ -46,20 +45,20 @@ public class SavingsAccount extends BankAccount {
             transactionHistory.add("Service charge applied: $" + serviceCharge);
             System.out.println("Service charge applied: $" + serviceCharge);
         } else {
-            balance -= 5; // Flat service charge for each month
+            balance -= 5;
             transactionHistory.add("Monthly service charge applied: $5");
             System.out.println("Monthly service charge applied: $5");
         }
-        numberOfWithdrawals = 0; // Reset monthly withdrawals
-        checkStatus(); // Check status after monthly process
+        numberOfWithdrawals = 0; 
+        checkStatus(); 
     }
 
     private void checkStatus() {
         if (balance < 25) {
-            status = false; // Inactive status
+            status = false; 
             System.out.println("Account status: INACTIVE (balance below $25).");
         } else {
-            status = true; // Active status
+            status = true; 
             System.out.println("Account status: ACTIVE.");
         }
     }
