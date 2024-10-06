@@ -1,0 +1,40 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Eclipse IDE files
+.classpath
+.project
+.settings/
+bin/
+target/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+out/
+
+# NetBeans IDE files
+nbproject/private/
+nbproject/Makefile-Debug.mk
+nbproject/Makefile-Release.mk
+dist/
+build/
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Other files
+.DS_Store
+Thumbs.db
