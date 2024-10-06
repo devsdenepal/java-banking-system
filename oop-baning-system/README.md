@@ -1,6 +1,10 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Project Name**: `Java OOP BANKING MANAGEMENT SYSTEM`
+### Instructions:
+`cd ./src`
+`javac *.java`
+`java App`
 
 ## Folder Structure
 
