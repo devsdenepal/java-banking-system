@@ -10,7 +10,6 @@ public class App {
     private static final String YELLOW = "\033[0;33m"; // Yellow
     private static final String CYAN = "\033[0;36m"; // Cyan
     private static final String MAGENTA = "\033[0;35m"; // Magenta
-    private static final String BLUE = "\033[0;34m"; // Blue
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
